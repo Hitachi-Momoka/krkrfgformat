@@ -249,7 +249,9 @@ namespace Li.krkrfgformat
             }
             return bitmap.Clone(Picture.GetRectFromPictureWithouBlank(bitmap), bitmap.PixelFormat);
         }
-
+	    
+        ///读取tlg用的，用：https://github.com/morkt/GARbro。里面的"ArcFormats.dll"和"GameRes.dll"。
+	///没有会读取不了tlg文件。
         public static Bitmap TlgFormat(string file)
         {
             string exePath = Environment.CurrentDirectory;
